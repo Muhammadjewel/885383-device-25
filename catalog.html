@@ -88,11 +88,13 @@
 				<section class="products__list">
 					<div>
 						<span>Сортировка:</span>
-						<button type="button">По цене</button>
-						<button type="button">По типу</button>
-						<button type="button">По популярности</button>
-						<button type="button">По возрастанию</button>
-						<button type="button">По убыванию</button>
+						<ul class="products__sorting">
+							<li><a href="#">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По популярности</a></li>
+							<li><a href="#">По возрастанию</a></li>
+							<li><a href="#">По убыванию</a></li>
+						</ul><!-- /.products__sorting -->
 					</div>
 					<ul>
 						<li class="product">
@@ -150,13 +152,13 @@
 					</ul>
 
 					<div class="pagination">
-						<a href="#">Назад</a>
-						<a href="#">Вперед</a>
-						<ul>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-						</ul>
+						<ul class="pagination-list">
+							<li class="pagination-item"><a href="#">Назад</a></li>
+							<li class="pagination-item pagination-item--active"><a href="#">1</a></li>
+							<li class="pagination-item"><a href="#">2</a></li>
+							<li class="pagination-item"><a href="#">3</a></li>
+							<li class="pagination-item"><a href="#">Вперед</a></li>
+						</ul><!-- /.pagination-list -->
 					</div><!-- /.pagination -->
 				</section><!-- /.products__list -->
 			</section><!-- /.products -->

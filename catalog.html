@@ -46,8 +46,14 @@
 			<section class="products">
 				<h2 class="visually-hidden">Каталог продуктов</h2>
 				<section class="filters product__filters">
-					<h3 class="visually-hidden">Фильтр продуктов</h3>
+					<div>
+						<h3 class="visually-hidden">Фильтр:</h3>
+					</div>
 					<form>
+						<fieldset>
+							<legend>Стоимость</legend>
+							<input type="range" name="price">
+						</fieldset>
 						<fieldset>
 							<legend>Цвет</legend>
 							<label>
@@ -75,17 +81,25 @@
 								<input type="radio" name="bluetooth" value="no"> Нет
 							</label>
 						</fieldset>
-						<button type="submit">Показать</button>
+						<button type="submit" class="button">Показать</button>
 					</form>
 				</section><!-- /.filters product__filters -->
 
 				<section class="products__list">
+					<div>
+						<span>Сортировка:</span>
+						<button type="button">По цене</button>
+						<button type="button">По типу</button>
+						<button type="button">По популярности</button>
+						<button type="button">По возрастанию</button>
+						<button type="button">По убыванию</button>
+					</div>
 					<ul>
 						<li class="product">
 							<div class="product__img-wrapper">
 								<img class="product__img" src="product.png" alt="Любительская селфи-палка">
 								<div class="product__actions">
-									<button type="button">В корзину</button>
+									<button type="button" class="button">В корзину</button>
 									<button type="button">Добавить к сравнению</button>
 								</div><!-- /.product__actions -->
 							</div><!-- /.product__img-wrapper -->
@@ -98,7 +112,7 @@
 							<div class="product__img-wrapper">
 								<img class="product__img" src="product.png" alt="Профессиональная селфи-палка">
 								<div class="product__actions">
-									<button type="button">В корзину</button>
+									<button type="button" class="button">В корзину</button>
 									<button type="button">Добавить к сравнению</button>
 								</div><!-- /.product__actions -->
 							</div><!-- /.product__img-wrapper -->
@@ -111,7 +125,7 @@
 							<div class="product__img-wrapper">
 								<img class="product__img" src="product.png" alt="Непотопляемая селфи-палка">
 								<div class="product__actions">
-									<button type="button">В корзину</button>
+									<button type="button" class="button">В корзину</button>
 									<button type="button">Добавить к сравнению</button>
 								</div><!-- /.product__actions -->
 							</div><!-- /.product__img-wrapper -->
@@ -124,7 +138,7 @@
 							<div class="product__img-wrapper">
 								<img class="product__img" src="product.png" alt="Селфи-палка «Следуй за мной»">
 								<div class="product__actions">
-									<button type="button">В корзину</button>
+									<button type="button" class="button">В корзину</button>
 									<button type="button">Добавить к сравнению</button>
 								</div><!-- /.product__actions -->
 							</div><!-- /.product__img-wrapper -->
@@ -134,6 +148,16 @@
 							</div><!-- /.product__text -->
 						</li><!-- /.product -->
 					</ul>
+
+					<div class="pagination">
+						<a href="#">Назад</a>
+						<a href="#">Вперед</a>
+						<ul>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</div><!-- /.pagination -->
 				</section><!-- /.products__list -->
 			</section><!-- /.products -->
 		</main>

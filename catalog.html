@@ -12,7 +12,10 @@
           <img src="img/logo-device.svg" width="163" height="35" alt="Device website logo">
         </a>
 
-        <!-- Форма поиска -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+          <button type="submit" class="button button--outline">Найти</button>
+        </form>
 
         <ul class="site-header__actions">
           <li>
@@ -28,7 +31,20 @@
         <ul>
           <li>
             <a href="#">Каталог товаров</a>
-            <!-- Подменю категорий -->
+            <ul>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+                <a href="#">Моноподы для селфи</a>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -55,7 +71,7 @@
           <form>
             <fieldset>
               <legend>Стоимость</legend>
-              <input type="range" name="price">
+              <input type="range" name="price"> <!-- TODO: заменить на подходящий вариант -->
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>

@@ -12,7 +12,10 @@
           <img src="img/logo-device.svg" width="163" height="35" alt="Device website logo">
         </a>
 
-        <!-- Форма поиска -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+          <button type="submit" class="button button--outline">Найти</button>
+        </form>
 
         <ul class="site-header__actions">
           <li><a href="#">Войти</a></li>
@@ -25,7 +28,20 @@
         <ul>
           <li>
             <a href="#">Каталог товаров</a>
-            <!-- Подменю категорий -->
+            <ul>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+                <a href="#">Моноподы для селфи</a>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -290,6 +306,37 @@
         </a>
       </div>
     </footer><!-- /.site-footer -->
+
+
+    <!-- МОДАЛЬНЫЕ ОКНА -->
+    <section class="modal modal--contact">
+      <h2 class="visually-hidden">Форма контакта</h2>
+      <button type="button" class="button button--close"><span class="visually-hidden">Закрыть форму</span></button>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name-input">Ваше имя:</label>
+          <input type="text" name="name" id="name-input" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="email-input">Ваше e-mail:</label>
+          <input type="email" name="email" id="email-input" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="message-textarea">Текст письма:</label>
+          <textarea name="message" id="message-textarea" placeholder="В свободной форме" required></textarea>
+        </p>
+        <p>
+          <button type="submit" class="button">Отправить</button>
+        </p>
+      </form>
+    </section><!-- /.modal modal--contact -->
+
+
+    <section class="modal modal--map">
+      <h2 class="visually-hidden">Карта местоположения офиса DEVICE в большом размере</h2>
+      <button type="button" class="button button--close"><span class="visually-hidden">Закрыть карту</span></button>
+      <img src="img/map-big.jpg" alt="Местоположение DEVICE на карте">      
+    </section><!-- /.modal modal--map -->
 
   </body>
 </html>

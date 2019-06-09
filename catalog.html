@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс Каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
@@ -13,7 +15,7 @@
         </a>
 
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+          <input type="search" name="search" id="search" class="search-form__input" placeholder="Поиск по сайту" required>
           <button type="submit" class="button button--outline">Найти</button>
         </form>
 
@@ -27,11 +29,11 @@
         </ul><!-- /.site-header__actions -->
       </div><!-- /.site-header__top -->
 
-      <nav class="site-nav">
-        <ul>
-          <li>
+      <nav class="sitenav">
+        <ul class="sitenav__ul">
+          <li class="sitenav__li">
             <a href="#">Каталог товаров</a>
-            <ul>
+            <ul class="sitenav__submenu">
               <li>
                 <a href="#">Виртуальная реальность</a>
                 <a href="#">Моноподы для селфи</a>
@@ -46,17 +48,17 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav><!-- /.site-nav -->
+          <li class="sitenav__li"><a href="#">Доставка</a></li>
+          <li class="sitenav__li"><a href="#">Гарантия</a></li>
+          <li class="sitenav__li"><a href="#">Контакты</a></li>
+        </ul><!-- /.sitenav__ul -->
+      </nav><!-- /.sitenav -->
     </header><!-- /.site-header -->
 
 
     <main>
-      <h2>Моноподы для селфи</h2>
-      <ol>
+      <h2 class="heading">Моноподы для селфи</h2>
+      <ol class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li><a>Моноподы для селфи</a></li>
@@ -100,7 +102,7 @@
                 <input type="radio" name="bluetooth" value="no"> Нет
               </label>
             </fieldset>
-            <button type="submit" class="button">Показать</button>
+            <button type="submit" class="button button--fancy">Показать</button>
           </form>
         </section><!-- /.filters product__filters -->
 
@@ -115,57 +117,57 @@
               <li><a href="#">По убыванию</a></li>
             </ul><!-- /.products__sorting -->
           </div>
-          <ul>
+          <ul class="products__ul">
             <li class="product">
               <div class="product__img-wrapper">
                 <img class="product__img" src="img/product-selfie-amateur.jpg" alt="Любительская селфи-палка">
                 <div class="product__actions">
-                  <button type="button" class="button">В корзину</button>
-                  <button type="button">Добавить к сравнению</button>
+                  <button type="button" class="button button--fancy">В корзину</button>
+                  <button type="button" class="button button--comparison">Добавить к сравнению</button>
                 </div><!-- /.product__actions -->
               </div><!-- /.product__img-wrapper -->
               <div class="product__text">
-                <h3><a href="#">Любительская селфи-палка</a></h3>
-                <span>500 руб.</span>
+                <h3 class="product__name"><a href="#">Любительская селфи-палка</a></h3>
+                <span class="product__price">500 руб.</span>
               </div><!-- /.product__text -->
             </li><!-- /.product -->
             <li class="product">
               <div class="product__img-wrapper">
                 <img class="product__img" src="img/product-selfie-pro.jpg" alt="Профессиональная селфи-палка">
                 <div class="product__actions">
-                  <button type="button" class="button">В корзину</button>
-                  <button type="button">Добавить к сравнению</button>
+                  <button type="button" class="button button--fancy">В корзину</button>
+                  <button type="button" class="button button--comparison">Добавить к сравнению</button>
                 </div><!-- /.product__actions -->
               </div><!-- /.product__img-wrapper -->
               <div class="product__text">
-                <h3><a href="#">Профессиональная селфи-палка</a></h3>
-                <span>1 500 руб.</span>
+                <h3 class="product__name"><a href="#">Профессиональная селфи-палка</a></h3>
+                <span class="product__price">1 500 руб.</span>
               </div><!-- /.product__text -->
             </li><!-- /.product -->
             <li class="product">
               <div class="product__img-wrapper">
                 <img class="product__img" src="img/product-floating-selfie.jpg" alt="Непотопляемая селфи-палка">
                 <div class="product__actions">
-                  <button type="button" class="button">В корзину</button>
-                  <button type="button">Добавить к сравнению</button>
+                  <button type="button" class="button button--fancy">В корзину</button>
+                  <button type="button" class="button button--comparison">Добавить к сравнению</button>
                 </div><!-- /.product__actions -->
               </div><!-- /.product__img-wrapper -->
               <div class="product__text">
-                <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-                <span>2 500 руб.</span>
+                <h3 class="product__name"><a href="#">Непотопляемая селфи-палка</a></h3>
+                <span class="product__price">2 500 руб.</span>
               </div><!-- /.product__text -->
             </li><!-- /.product -->
             <li class="product">
               <div class="product__img-wrapper">
                 <img class="product__img" src="img/product-follow-me.jpg" alt="Селфи-палка «Следуй за мной»">
                 <div class="product__actions">
-                  <button type="button" class="button">В корзину</button>
-                  <button type="button">Добавить к сравнению</button>
+                  <button type="button" class="button button--fancy">В корзину</button>
+                  <button type="button" class="button button--comparison">Добавить к сравнению</button>
                 </div><!-- /.product__actions -->
               </div><!-- /.product__img-wrapper -->
               <div class="product__text">
-                <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-                <span>4 900 руб.</span>
+                <h3 class="product__name"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+                <span class="product__price">4 900 руб.</span>
               </div><!-- /.product__text -->
             </li><!-- /.product -->
           </ul>
@@ -185,11 +187,11 @@
 
 
     <footer class="site-footer">
-      <div class="site-footer__actions">
-        <a href="" class="logo logo--footer">
+      <div class="site-footer__top">
+        <a href="index.html" class="logo logo--footer">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
         </a>
-        <ul>
+        <ul class="site-footer__actions">
           <li>
             <a href="#">Валентин Петухов</a>
             <a href="#">Выйти</a>
@@ -199,18 +201,18 @@
         </ul>
       </div>
 
-      <div>
+      <div class="site-footer__middle">
         <address>г. Москва, ул. Строителей, 15</address>
-        <ul>
+        <ul class="site-footer__links">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a class="site-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
 
-      <div>
-        <ul>
+      <div class="site-footer__bottom">
+        <ul class="site-footer__socials">
           <li>
             <a href="#">
               <span class="visually-hidden">Facebook</span>
@@ -230,7 +232,7 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
         </a>
       </div>

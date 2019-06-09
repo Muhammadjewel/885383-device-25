@@ -195,6 +195,106 @@ img {
 }
 
 /* =============
+  FEATURED SLIDER
+  ============== */
+.slides {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slides-item__lead {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000;
+}
+.slides-item__details th {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.slides-item__details td {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+/* =============
+  CATEGORIES
+  ============== */
+.categories-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.categories-item__link {
+  display: block;
+  text-decoration: none;
+}
+.categories-item__img {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
+.categories-item__link:hover .categories-item__img {
+ background-color: #f0c52e;
+}
+.categories-item__text {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+.categories-item__link:active .categories-item__text {
+  opacity: 0.3;
+}
+
+/* =============
+  SERVICES
+  ============== */
+.services {
+  background-image: linear-gradient(
+    to bottom,
+    #fff 100px,
+    #e5e5e5 100px
+  );
+}
+.services-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.button--service {
+  min-width: 160px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.button--service:active {
+  width: 100%;
+  background: #000;
+  color: #f7e184;
+  text-align: left;
+}
+.services__content {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* =============
+  BRANDS
+  ============== */
+.brands__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* =============
   ABOUT
   ============== */
 .about ul {

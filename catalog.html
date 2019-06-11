@@ -68,12 +68,13 @@
         <h2 class="visually-hidden">Каталог продуктов</h2>
         <section class="filters product__filters">
           <div>
-            <h3 class="visually-hidden">Фильтр:</h3>
+            <h3>Фильтр:</h3>
           </div>
           <form>
             <fieldset>
               <legend>Стоимость</legend>
-              <input type="range" name="price"> <!-- TODO: заменить на подходящий вариант -->
+              <input type="range" name="price">
+              <!-- TODO: заменить на подходящий вариант -->
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -107,10 +108,10 @@
         </section><!-- /.filters product__filters -->
 
         <section class="products__list">
-          <div>
-            <span>Сортировка:</span>
+          <div class="sorting-wrapper">
+            <span class="sorting-label">Сортировка:</span>
             <ul class="products__sorting">
-              <li><a href="#">По цене</a></li>
+              <li class="active"><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По популярности</a></li>
               <li><a href="#">По возрастанию</a></li>
@@ -174,11 +175,11 @@
 
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item"><a href="#">Назад</a></li>
+              <li class="pagination-item pagination-item--prev"><a href="#">Назад</a></li>
               <li class="pagination-item pagination-item--active"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Вперед</a></li>
+              <li class="pagination-item pagination-item--next"><a href="#">Вперед</a></li>
             </ul><!-- /.pagination-list -->
           </div><!-- /.pagination -->
         </section><!-- /.products__list -->

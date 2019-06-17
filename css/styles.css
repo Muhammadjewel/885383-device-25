@@ -739,12 +739,14 @@ img {
   flex-grow: 1;
   background-color: #ebebeb;
 }
+.product__filters-bg {
+  background-color: #d9d9d9;
+}
 .product__filters-heading {
   display: flex;
   align-items: center;
   min-height: 70px;
   padding-left: 60px;
-  background-color: #d9d9d9;
 }
 .product__filters-heading,
 .product__filters form {

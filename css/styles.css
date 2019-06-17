@@ -651,16 +651,20 @@ img {
 }
 .site-footer__socials {
   display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.site-footer__socials li + li {
-  margin-left: 20px;
+.site-footer__socials li {
+  margin: 0 10px;
+  line-height: 12px;
 }
 .site-footer__socials a {
   display: inline-block;
-  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   opacity: 0.3;
   text-decoration: none;
 }

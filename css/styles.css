@@ -949,7 +949,7 @@ img {
   MODALS
   ============== */
 .modal {
-  /*display: none;*/
+  display: none;
   position: fixed;
   z-index: 3;
   top: 80px;
@@ -961,7 +961,6 @@ img {
 }
 .modal--contact {
   padding: 100px;
-  display: none;
 }
 .modal--map img {
   vertical-align: middle;

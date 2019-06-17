@@ -868,12 +868,12 @@ img {
 .product__text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   font-family: 'Gilroy', 'Arial', sans-serif;
   line-height: 24px;
 }
 .product__name {
-  flex-grow: 1;
+  width: 260px;
   margin: 0;
   font-size: 18px;
   line-height: 24px;

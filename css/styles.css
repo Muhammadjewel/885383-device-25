@@ -167,7 +167,7 @@ img {
   background-color: #000;
   color: rgba(255, 255, 255, 0.3);
 }
-.search-form__input:valid + .button {
+.search-form__input:focus + .button {
   display: inline-block;
 }
 

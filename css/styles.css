@@ -502,6 +502,7 @@ img {
 
 .about-contacts {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 80px;
 }
 .about-contacts .heading {

@@ -180,6 +180,8 @@ img {
   list-style: none;
 }
 .site-header__actions li {
+  display: flex;
+  align-items: center;
   margin-right: 40px;
 }
 .site-header__actions .profile-link {
@@ -678,11 +680,23 @@ img {
 /* =============
   CATALOG
   ============== */
+.page-title {
+  padding: 40px 60px 50px;
+}
+.page-title .heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 /* Breadcrumbs */
 .breadcrumbs {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
+  line-height: 24px;
+}
+.breadcrumbs li {
+  margin-right: 40px;
 }
 .breadcrumbs a {
   text-decoration: none;
@@ -698,8 +712,13 @@ img {
 /* =============
   PRODUCTS
   ============== */
-.products h3,
-.products .sorting-label {
+.products-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.product__filters-heading h3 {
+  margin: 0;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -709,33 +728,86 @@ img {
   color: #000;
 }
 /* Filters */
-.product__filters,
-.sorting-wrapper {
+.product__filters {
+  flex-grow: 1;
   background-color: #ebebeb;
 }
-.product__filters > div:first-child {
+.product__filters-heading {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding-left: 60px;
   background-color: #d9d9d9;
 }
+.product__filters-heading,
+.product__filters form {
+  width: 330px;
+  margin-left: auto;
+}
+.product__filters form {
+  padding: 70px 67px 70px 60px;
+}
 .product__filters fieldset {
+  padding: 0;
   border: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 .product__filters legend {
+  display: block;
+  width: 100%;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #000;
 }
+.product__filters legend::before { 
+  content: '';
+  display: block;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #000;
+}
 .product__filters label {
+  display: block;
   font-size: 14px;
   line-height: 40px;
   color: #000;
 }
+.products__list {
+  flex-grow: 1;
+  width: 830px;
+  margin-right: auto;
+}
 /* Sorting row */
+.sorting-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding-left: 75px;
+  background-color: #ebebeb;
+}
+.sorting-label {
+  margin-right: 55px;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #000;
+}
 .products__sorting {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  line-height: 18px;
+}
+.products__sorting li {
+  margin-right: 30px;
 }
 .products__sorting a {
   font-size: 14px;
@@ -753,22 +825,55 @@ img {
 }
 /* Products list */
 .products__ul {
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 830px;
+  padding: 70px 0 0 75px;
   margin: 0;
   list-style: none;
 }
+.product {
+  flex-basis: 360px;
+  margin-bottom: 50px;
+}
+.product__img-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 35px;
+}
 .product__img {
-  max-width: 100%;
-  height: auto;
+  vertical-align: middle;
 }
 .product__actions {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 .product:hover .product__actions {
-  display: block;
+  display: flex;
+}
+.product__actions .button--fancy {
+  margin-bottom: 20px;
 }
 .product__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'Gilroy', 'Arial', sans-serif;
+  line-height: 24px;
+}
+.product__name {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 18px;
   line-height: 24px;
 }
 .product__name a {
@@ -783,9 +888,14 @@ img {
 }
 /* Pagination */
 .pagination {
+  width: 760px;
+  margin-left: 75px;
+  margin-bottom: 80px;
   background-color: #ebebeb;
 }
 .pagination-list {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -798,6 +908,8 @@ img {
 }
 .pagination-list a {
   display: inline-block;
+  padding: 10px;
+  margin: 0 5px;
   text-decoration: none;
   color: #000;
   opacity: 0.3;
@@ -811,9 +923,16 @@ img {
 .pagination-item--active a {
   opacity: 1;
 }
+.pagination-item--prev {
+  margin-right: auto;
+}
+.pagination-item--next {
+  margin-left: auto;
+}
 .pagination-item--prev a,
 .pagination-item--next a {
-  padding: 25px;
+  padding: 25px 30px;
+  margin: 0;
   opacity: 1;
 }
 .pagination-item--prev a:hover,

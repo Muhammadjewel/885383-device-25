@@ -746,6 +746,9 @@ img {
 .htmlacademy-logo:active {
   opacity: 0.3;
 }
+.htmlacademy-logo img {
+  vertical-align: middle;
+}
 /* =============
   CATALOG
   ============== */

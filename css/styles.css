@@ -888,8 +888,16 @@ img {
   list-style: none;
   line-height: 18px;
 }
-.products__sorting li {
+.products__sorting-types {
+  margin-right: 175px;
+}
+.products__sorting-item {
   margin-right: 30px;
+}
+.products__sorting-asc,
+.products__sorting-desc {
+  margin-left: 20px;
+  margin-right: 0;
 }
 .products__sorting a {
   font-size: 14px;
@@ -904,6 +912,20 @@ img {
 .products__sorting a:active,
 .products__sorting .active a {
   opacity: 1;
+}
+.products__sorting-asc a,
+.products__sorting-desc a {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.products__sorting-asc a {
+  background-image: url("../img/icon-up-dir.svg");
+}
+.products__sorting-desc a {
+  background-image: url("../img/icon-down-dir.svg");
 }
 /* Products list */
 .products__ul {

@@ -121,12 +121,14 @@
           <section class="products__list">
             <div class="sorting-wrapper">
               <span class="sorting-label">Сортировка:</span>
+              <ul class="products__sorting products__sorting-types">
+                <li class="products__sorting-item active"><a href="#">По цене</a></li>
+                <li class="products__sorting-item"><a href="#">По типу</a></li>
+                <li class="products__sorting-item"><a href="#">По популярности</a></li>
+              </ul><!-- /.products__sorting -->
               <ul class="products__sorting">
-                <li class="active"><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По популярности</a></li>
-                <li><a href="#">По возрастанию</a></li>
-                <li><a href="#">По убыванию</a></li>
+                <li class="products__sorting-item products__sorting-asc"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li class="products__sorting-item products__sorting-desc active"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
               </ul><!-- /.products__sorting -->
             </div>
             <ul class="products__ul">

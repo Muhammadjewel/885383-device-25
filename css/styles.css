@@ -334,7 +334,10 @@ img {
   margin: 0 10px;
 }
 .slides {
+  position: relative;
+  z-index: 1;
   display: flex;
+  min-height: 493px;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -345,12 +348,15 @@ img {
   padding: 0 60px;
 }
 .slides-item {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  left: 1040px;
   display: flex;
   width: 1040px;
   flex-shrink: 0;
   counter-increment: slides;
+}
+.slides-item.active {
+  left: 0;
 }
 .slides-item::before {
   content: '0'counter(slides);
@@ -507,20 +513,52 @@ img {
   text-align: left;
 }
 .services__content {
+  position: relative;
+  z-index: 1;
   display: flex;
   width: 875px;
+  min-height: 300px;
   padding: 0;
+  padding-bottom: 30px;
   margin: 0;
   overflow: hidden;
   list-style: none;
 }
 .services__item {
+  position: absolute;
+  left: 760px;
   flex-shrink: 0;
   width: 760px;
+  padding-top: 73px;
   padding-left: 115px;
 }
+.services__item.active {
+  left: 0;
+}
+.services__item::after {
+  content: '';
+  position: absolute;
+  top: 83px;
+  right: 0;
+  width: 171px;
+  height: 194px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.services__item--delivery::after {
+  background-image: url('../img/delivery.svg');
+}
+.services__item--guarantee::after {
+  background-image: url('../img/warranty.svg');
+}
+.services__item--credit::after {
+  background-image: url('../img/credit.svg');
+}
 .services__item-name {
-  margin-top: 73px;
+  margin-top: 0;
+}
+.services__item-text {
+  width: 440px;
 }
 /* =============
   BRANDS
@@ -1140,6 +1178,9 @@ img {
 }
 .modal--map img {
   vertical-align: middle;
+}
+.modal.shown {
+  display: flex;
 }
 .button--close {
   position: absolute;

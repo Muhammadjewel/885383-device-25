@@ -17,10 +17,33 @@ sliderIndicators.forEach(function(indicator) {
     slides.forEach(function(slide) {
       slide.classList.remove('active');
     });
-    
+
     // Показываем нужный слайд
     var activeSlideOrder = parseInt(this.dataset.slideTo);
     slides[activeSlideOrder].classList.add('active');
+  });
+});
+
+// Слайдер сервисов
+var servicesListItem = document.querySelectorAll('.services-list__item');
+var servicesListIndicators = document.querySelectorAll('.services-list__item a');
+var servicesItems = document.querySelectorAll('.services__item');
+servicesListIndicators.forEach(function(indicator) {
+  indicator.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    servicesListItem.forEach(function(item) {
+      item.classList.remove('active');
+    });
+
+    this.parentElement.classList.add('active');
+
+    servicesItems.forEach(function(service) {
+      service.classList.remove('active');
+    });
+
+    var activeSlideOrder = parseInt(this.dataset.slideTo);
+    servicesItems[activeSlideOrder].classList.add('active');
   });
 });
 

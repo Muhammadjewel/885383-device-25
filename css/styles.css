@@ -955,6 +955,14 @@ img {
   margin-left: 20px;
   margin-right: 0;
 }
+.products__sorting-asc a,
+.products__sorting-desc a {
+  opacity: 0.2;
+}
+.products__sorting-asc a:hover,
+.products__sorting-desc a:hover {
+  opacity: 0.4;
+}
 .products__sorting a {
   font-size: 14px;
   line-height: 18px;

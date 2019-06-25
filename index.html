@@ -60,19 +60,19 @@
       <section class="slider featured-slider">
         <h2 class="visually-hidden">Слайдер популярных товаров</h2>
         <ul class="slider__indicators">
-          <li class="active">
+          <li class="slider__indicator active">
             <a href="#">
               <span class="visually-hidden">Первый слайд</span>
               <img src="img/slider-button.svg" width="12" height="12" alt="Иконка индикатора слайда">
             </a>
           </li>
-          <li>
+          <li class="slider__indicator">
             <a href="#">
               <span class="visually-hidden">Второй слайд</span>
               <img src="img/slider-button-empty.svg" width="12" height="12" alt="Иконка индикатора слайда">
             </a>
           </li>
-          <li>
+          <li class="slider__indicator">
             <a href="#">
               <span class="visually-hidden">Третий слайд</span>
               <img src="img/slider-button-empty.svg" width="12" height="12" alt="Иконка индикатора слайда">
@@ -215,9 +215,9 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <div class="services-inner">
           <ul class="services-list">
-            <li class="services-list-active"><a href="#" class="button button--fancy button--service">Доставка</a></li>
-            <li><a href="#" class="button button--fancy button--service">Гарантия</a></li>
-            <li><a href="#" class="button button--fancy button--service">Кредит</a></li>
+            <li class="services-list__item services-list__item active"><a href="#" class="button button--fancy button--service">Доставка</a></li>
+            <li class="services-list__item"><a href="#" class="button button--fancy button--service">Гарантия</a></li>
+            <li class="services-list__item"><a href="#" class="button button--fancy button--service">Кредит</a></li>
           </ul><!-- /.services-list -->
           <ul class="services__content">
             <li class="services__item services__item--delivery active">
@@ -279,7 +279,7 @@
           <a href="#" class="map-link">
             <img src="img/map.jpg" alt="Местоположение DEVICE на карте" width="560" height="222">
           </a>
-          <a href="#" class="button button--fancy">Напишите нам</a>
+          <a href="#" class="button button--fancy button--form">Напишите нам</a>
         </section><!-- /.about -->
       </div><!-- /.about-contacts -->
     </div><!-- /.container -->
@@ -367,5 +367,6 @@
       <img src="img/map-big.jpg" alt="Местоположение DEVICE на карте" width="960" height="559">      
     </section><!-- /.modal -->
 
+    <script src="js/scripts.js"></script>
   </body>
 </html>

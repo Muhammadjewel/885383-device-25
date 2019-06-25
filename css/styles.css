@@ -505,7 +505,7 @@ img {
   padding-left: 25px;
   padding-right: 25px;
 }
-.services-list-active .button--service,
+.services-list__item.active .button--service,
 .button--service:active {
   width: 100%;
   background: #000;

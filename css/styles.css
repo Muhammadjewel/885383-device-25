@@ -61,6 +61,7 @@ img {
 }
 .button {
   display: inline-block;
+  vertical-align: baseline;
   border: none;
   background-color: transparent;
 }
@@ -149,7 +150,7 @@ img {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: url("../img/search.svg") no-repeat left center;
+  background: url('../img/search.svg') no-repeat left center;
 }
 .search-form__input {
   width: 357px;
@@ -185,6 +186,7 @@ img {
 }
 .search-form__input:focus + .button {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 /* Site header actions */
@@ -209,6 +211,7 @@ img {
 }
 .site-header__action a {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 25px;
   color: #000;
   text-decoration: none;
@@ -216,7 +219,7 @@ img {
   background-position: left center;
 }
 .site-header__action-profile a {
-  background-image: url("../img/user.svg");
+  background-image: url('../img/user.svg');
 }
 .site-header__action-profile .logout-link {
   background-image: none;
@@ -225,10 +228,10 @@ img {
   opacity: 0.3;
 }
 .site-header__action-compare a {
-  background-image: url("../img/compare.svg");
+  background-image: url('../img/compare.svg');
 }
 .site-header__action-cart a {
-  background-image: url("../img/cart.svg");
+  background-image: url('../img/cart.svg');
 }
 .site-header__actions a:hover {
   opacity: 0.6;
@@ -375,6 +378,7 @@ img {
 .slides-item__lead {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   padding-top: 90px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
@@ -470,6 +474,7 @@ img {
   ============== */
 .services {
   padding-bottom: 70px;
+  background-color: #fff;
   background-image: linear-gradient(
     to bottom,
     #fff 100px,
@@ -626,6 +631,7 @@ img {
 }
 .site-footer__action a {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 30px;
   margin-left: 40px;
   background-repeat: no-repeat;
@@ -635,7 +641,7 @@ img {
   opacity: 0.7;
 }
 .site-footer__action-profile a {
-  background-image: url("../img/user-yellow.svg");
+  background-image: url('../img/user-yellow.svg');
 }
 .site-footer__action-profile .logout-link {
   background-image: none;
@@ -644,10 +650,10 @@ img {
   opacity: 0.3;
 }
 .site-footer__action-compare a {
-  background-image: url("../img/compare-yellow.svg");
+  background-image: url('../img/compare-yellow.svg');
 }
 .site-footer__action-cart a {
-  background-image: url("../img/cart-yellow.svg");
+  background-image: url('../img/cart-yellow.svg');
 }
 .site-footer__action a:hover {
   opacity: 1;
@@ -724,6 +730,7 @@ img {
 }
 .site-footer__socials a {
   display: inline-block;
+  vertical-align: baseline;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -779,7 +786,7 @@ img {
   right: -20px;
   width: 4px;
   height: 7px;
-  background: url("../img/nav-arrow.svg") no-repeat center center;
+  background: url('../img/nav-arrow.svg') no-repeat center center;
 }
 .breadcrumbs a {
   text-decoration: none;
@@ -980,16 +987,17 @@ img {
 .products__sorting-asc a,
 .products__sorting-desc a {
   display: inline-block;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .products__sorting-asc a {
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url('../img/icon-up-dir.svg');
 }
 .products__sorting-desc a {
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url('../img/icon-down-dir.svg');
 }
 /* Products list */
 .products__ul {
@@ -1076,6 +1084,7 @@ img {
 }
 .pagination-list a {
   display: inline-block;
+  vertical-align: baseline;
   padding: 10px;
   margin: 0 5px;
   text-decoration: none;
@@ -1139,7 +1148,7 @@ img {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-image: url("../img/modal-close.svg");
+  background-image: url('../img/modal-close.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1167,6 +1176,7 @@ img {
 }
 .contact-form label {
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 13px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;

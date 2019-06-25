@@ -1,3 +1,29 @@
+// Применение динамики слайдеру
+var slides = document.querySelectorAll('.slides-item');
+var sliderItems = document.querySelectorAll('.slider__indicator');
+var sliderIndicators = document.querySelectorAll('.slider__indicator a');
+sliderIndicators.forEach(function(indicator) {
+  indicator.addEventListener('click', function(e) {
+    e.preventDefault();
+    // Удаляем статус активности у всех элементов списка
+    sliderItems.forEach(function(item) {
+      item.classList.remove('active');
+    });
+
+    // Добавляем статус активности нажатому элементу
+    this.parentElement.classList.add('active');
+
+    // Прячем все слайды
+    slides.forEach(function(slide) {
+      slide.classList.remove('active');
+    });
+    
+    // Показываем нужный слайд
+    var activeSlideOrder = parseInt(this.dataset.slideTo);
+    slides[activeSlideOrder].classList.add('active');
+  });
+});
+
 // Закрытие модальных окон
 var modalClosingButtons = document.querySelectorAll('.button--close');
 modalClosingButtons.forEach(function(button) {

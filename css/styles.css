@@ -333,6 +333,15 @@ img {
 .slider__indicators li {
   margin: 0 10px;
 }
+.slider__indicator a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('../img/slider-button-empty.svg') no-repeat center center / contain;
+}
+.slider__indicator.active a {
+  background-image: url('../img/slider-button.svg');
+}
 .slides {
   position: relative;
   z-index: 1;

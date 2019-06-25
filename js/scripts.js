@@ -1,51 +1,30 @@
-// Применение динамики слайдеру
-var slides = document.querySelectorAll('.slides-item');
-var sliderItems = document.querySelectorAll('.slider__indicator');
-var sliderIndicators = document.querySelectorAll('.slider__indicator a');
-sliderIndicators.forEach(function(indicator) {
-  indicator.addEventListener('click', function(e) {
-    e.preventDefault();
-    // Удаляем статус активности у всех элементов списка
-    sliderItems.forEach(function(item) {
-      item.classList.remove('active');
-    });
+var createSlider = function(togglerClass, togglerParentClass, slidesListClass) {
+  var togglers = document.querySelectorAll(togglerClass);
+  var togglerParent = document.querySelectorAll(togglerParentClass);
+  var slidesList = document.querySelectorAll(slidesListClass);
 
-    // Добавляем статус активности нажатому элементу
-    this.parentElement.classList.add('active');
+  togglers.forEach(function(toggler) {
+    toggler.addEventListener('click', function(event) {
+      event.preventDefault();
 
-    // Прячем все слайды
-    slides.forEach(function(slide) {
-      slide.classList.remove('active');
-    });
+      togglerParent.forEach(function(item) {
+        item.classList.remove('active');
+      });
 
-    // Показываем нужный слайд
-    var activeSlideOrder = parseInt(this.dataset.slideTo);
-    slides[activeSlideOrder].classList.add('active');
+      this.parentElement.classList.add('active');
+
+      slidesList.forEach(function(slide) {
+        slide.classList.remove('active');
+      });
+
+      var activeSlideOrder = parseInt(this.dataset.slideTo);
+      slidesList[activeSlideOrder].classList.add('active');
+    })
   });
-});
+};
 
-// Слайдер сервисов
-var servicesListItem = document.querySelectorAll('.services-list__item');
-var servicesListIndicators = document.querySelectorAll('.services-list__item a');
-var servicesItems = document.querySelectorAll('.services__item');
-servicesListIndicators.forEach(function(indicator) {
-  indicator.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    servicesListItem.forEach(function(item) {
-      item.classList.remove('active');
-    });
-
-    this.parentElement.classList.add('active');
-
-    servicesItems.forEach(function(service) {
-      service.classList.remove('active');
-    });
-
-    var activeSlideOrder = parseInt(this.dataset.slideTo);
-    servicesItems[activeSlideOrder].classList.add('active');
-  });
-});
+createSlider('.slider__indicator a', '.slider__indicator', '.slides-item');
+createSlider('.services-list__item a', '.services-list__item', '.services__item');
 
 // Закрытие модальных окон
 var modalClosingButtons = document.querySelectorAll('.button--close');

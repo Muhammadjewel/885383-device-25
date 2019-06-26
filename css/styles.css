@@ -1391,8 +1391,7 @@ img {
   background-color: #fff;  
   box-shadow: inset 0 0 0 3px #f7e296;
 }
-/*TODO: fix valid/invalid style change*/
-/*.contact-form input:invalid,
-.contact-form textarea:invalid {
+.contact-form input:focus:invalid,
+.contact-form textarea:focus:invalid {
   background-color: #f6dada;
-}*/
+}

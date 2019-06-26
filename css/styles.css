@@ -720,6 +720,9 @@ img {
   margin-left: 25px;
   opacity: 0.3;
 }
+.site-footer__action-profile .logout-link::before {
+  display: none;
+}
 .site-footer__action a:hover {
   color: #fff;
 }

@@ -62,6 +62,7 @@ img {
   vertical-align: baseline;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .button--fancy {
   padding: 8px 43px;

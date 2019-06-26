@@ -353,6 +353,7 @@ img {
   height: 12px;
   border: none;
   background: url('../img/slider-button-empty.svg') no-repeat center center / contain;
+  cursor: pointer;
 }
 .slider__indicator.active button {
   background-image: url('../img/slider-button.svg');

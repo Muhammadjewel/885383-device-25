@@ -23,8 +23,8 @@ var createSlider = function(togglerClass, togglerParentClass, slidesListClass) {
   });
 };
 
-createSlider('.slider__indicator a', '.slider__indicator', '.slides-item');
-createSlider('.services-list__item a', '.services-list__item', '.services__item');
+createSlider('.slider__indicator button', '.slider__indicator', '.slides-item');
+createSlider('.services-list__item button', '.services-list__item', '.services__item');
 
 // Закрытие модальных окон
 var modalClosingButtons = document.querySelectorAll('.button--close');

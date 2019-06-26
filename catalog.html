@@ -84,8 +84,19 @@
             <form>
               <fieldset>
                 <legend>Стоимость</legend>
-                <input type="range" name="price">
-                <!-- TODO: заменить на подходящий вариант -->
+                <div class="filter-range">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div><!-- /.range-controls -->
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                  </div><!-- /.price-controls -->
+                </div><!-- /.filter-range -->
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>

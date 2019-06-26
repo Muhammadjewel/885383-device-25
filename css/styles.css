@@ -934,6 +934,68 @@ img {
   font-size: 14px;
   color: #000;
 }
+/*Range*/
+.range-controls {
+  position: relative;
+  margin-bottom: 10px;
+}
+.scale {
+  position: relative;
+  z-index: 1;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+.range-toggle {
+  position: absolute;
+  z-index: 2;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:active {
+  transform: scale(1.1);
+}
+.range-toggle-min {
+  left: -5px;
+}
+.range-toggle-max {
+  left: 100px;
+}
+.price-controls label {
+  display: inline-block;
+  cursor: pointer;  
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.2);
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.2);
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+/*Checkbox and radio*/
 .check, .radio {
   padding-left: 40px;
 }

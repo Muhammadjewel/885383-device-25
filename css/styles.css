@@ -1040,12 +1040,17 @@ img {
   border: none;
 }
 /*Checkbox and radio*/
-.check, .radio {
+.check, 
+.radio {
   padding-left: 40px;
 }
 .check:hover .check__box,
 .radio:hover .radio__box {
   opacity: 0.6;
+}
+.check__input:focus ~ .check__text,
+.radio__input:focus ~ .radio__box {
+  outline: 1px auto #9cbef5;
 }
 .check__input,
 .radio__input {

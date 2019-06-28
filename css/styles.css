@@ -940,7 +940,7 @@ img {
 .product__filters-heading {
   display: flex;
   align-items: center;
-  min-height: 70px;
+  height: 70px;
   padding-left: 60px;
 }
 .product__filters-heading,
@@ -1111,7 +1111,7 @@ img {
 .sorting-wrapper {
   display: flex;
   align-items: center;
-  min-height: 70px;
+  height: 70px;
   padding-left: 75px;
   background-color: #ebebeb;
 }

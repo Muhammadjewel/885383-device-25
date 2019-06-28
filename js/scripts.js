@@ -1,16 +1,16 @@
 // Закрытие модальных окон
 var modalClosingButtons = document.querySelectorAll('.button--close');
-modalClosingButtons.forEach(function(button) {
-  button.addEventListener('click', function() {
+for (var i = 0; i < modalClosingButtons.length; i++) {
+  modalClosingButtons[i].addEventListener('click', function() {
     this.parentElement.classList.remove('shown');
   });
-});
+}
 
 var closeAllModals = function() {
   var modals = document.querySelectorAll('.modal');
-  modals.forEach(function(modal) {
-    modal.classList.remove('shown');
-  });
+  for (var i = 0; i < modals.length; i++) {
+    modals[i].classList.remove('shown');
+  }
 };
 
 // Показать карту

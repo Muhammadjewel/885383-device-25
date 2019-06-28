@@ -544,8 +544,9 @@ img {
   padding-left: 25px;
   padding-right: 25px;
 }
-.services-list__item.active .button--service,
-.button--service:active {
+#service-1:checked ~ .services-list .services-list__item:nth-child(1) label,
+#service-2:checked ~ .services-list .services-list__item:nth-child(2) label,
+#service-3:checked ~ .services-list .services-list__item:nth-child(3) label {
   width: 100%;
   background: #000;
   color: #f7e184;
@@ -564,15 +565,17 @@ img {
   list-style: none;
 }
 .services__item {
-  position: absolute;
-  left: 760px;
+  position: relative;
+  display: none;
   flex-shrink: 0;
   width: 760px;
   padding-top: 73px;
   padding-left: 115px;
 }
-.services__item.active {
-  left: 0;
+#service-1:checked ~ .services__content .services__item:nth-child(1),
+#service-2:checked ~ .services__content .services__item:nth-child(2),
+#service-3:checked ~ .services__content .services__item:nth-child(3) {
+  display: block;
 }
 .services__item::after {
   content: '';

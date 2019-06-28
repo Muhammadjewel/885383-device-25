@@ -59,9 +59,9 @@
       <!-- СЛАЙДЕР -->
       <section class="slider featured-slider">
         <h2 class="visually-hidden">Слайдер популярных товаров</h2>
-        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-1" checked>
-        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-2">
-        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-3">
+        <input type="radio" class="visually-hidden" id="featured-1" name="features-slider-toggle" checked>
+        <input type="radio" class="visually-hidden" id="featured-2" name="features-slider-toggle">
+        <input type="radio" class="visually-hidden" id="featured-3" name="features-slider-toggle">
 
         <ul class="slider__indicators">
           <li class="slider__indicator active">
@@ -215,15 +215,18 @@
       <div class="container">
         <h2 class="visually-hidden">Сервисы</h2>
         <div class="services-inner">
+          <input type="radio" class="visually-hidden" id="service-1" name="services-slider-toggle" checked>
+          <input type="radio" class="visually-hidden" id="service-2" name="services-slider-toggle">
+          <input type="radio" class="visually-hidden" id="service-3" name="services-slider-toggle">
           <ul class="services-list">
             <li class="services-list__item services-list__item active">
-              <button type="button" data-slide-to="0" class="button button--fancy button--service">Доставка</button>
+              <label for="service-1" class="button button--fancy button--service">Доставка</label>
             </li>
             <li class="services-list__item">
-              <button type="button" data-slide-to="1" class="button button--fancy button--service">Гарантия</button>
+              <label for="service-2" class="button button--fancy button--service">Гарантия</label>
             </li>
             <li class="services-list__item">
-              <button type="button" data-slide-to="2" class="button button--fancy button--service">Кредит</button>
+              <label for="service-3" class="button button--fancy button--service">Кредит</label>
             </li>
           </ul>
           <ul class="services__content">

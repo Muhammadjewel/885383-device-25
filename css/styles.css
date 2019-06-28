@@ -1319,6 +1319,9 @@ img {
 .pagination-list a:active {
   opacity: 1;
 }
+.pagination-item:nth-child(2) {
+  margin-left: 12px;
+}
 .pagination-item--active a {
   opacity: 1;
 }

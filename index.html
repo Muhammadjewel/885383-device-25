@@ -11,7 +11,7 @@
     <div class="container">
       <header class="site-header">
         <div class="site-header__top">
-          <a href="" class="logo logo--header">
+          <a class="logo logo--header">
             <img src="img/logo-device.svg" class="logo--header__img" width="163" height="35" alt="Логотип DEVICE">
           </a>
 
@@ -59,25 +59,29 @@
       <!-- СЛАЙДЕР -->
       <section class="slider featured-slider">
         <h2 class="visually-hidden">Слайдер популярных товаров</h2>
+        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-1" checked>
+        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-2">
+        <input type="radio" class="visually-hidden" name="features-slider-toggle" id="featured-3">
+
         <ul class="slider__indicators">
           <li class="slider__indicator active">
-            <button type="button" data-slide-to="0">
+            <label for="featured-1">
               <span class="visually-hidden">Первый слайд</span>
-            </button>
+            </label>
           </li>
           <li class="slider__indicator">
-            <button type="button" data-slide-to="1">
+            <label for="featured-2">
               <span class="visually-hidden">Второй слайд</span>
-            </button>
+            </label>
           </li>
           <li class="slider__indicator">
-            <button type="button" data-slide-to="2">
+            <label for="featured-3">
               <span class="visually-hidden">Третий слайд</span>
-            </button>
+            </label>
           </li>
         </ul>
 
-        <ul class="slides">
+        <ul class="slides-list">
           <li class="slides-item active">
             <div class="slides-item__img-wrapper">
               <img src="img/slider-selfie-stick.png" alt="Монопод" class="slides-item__img" width="384" height="486">

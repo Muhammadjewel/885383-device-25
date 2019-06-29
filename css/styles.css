@@ -171,6 +171,7 @@ img {
 }
 .search-form .button {
   display: inline-block;
+  vertical-align: baseline;
   padding: 10px 20px;
   border: 2px solid #000;
   background-color: transparent;
@@ -352,6 +353,7 @@ img {
 }
 .slider__indicator label {
   display: inline-block;
+  vertical-align: baseline;
   width: 12px;
   height: 12px;
   border: none;
@@ -1042,6 +1044,7 @@ img {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   cursor: pointer;  
 }
 .price-controls .min-price,
@@ -1307,6 +1310,7 @@ img {
 }
 .pagination-list a {
   display: inline-block;
+  vertical-align: baseline;
   padding: 14px; 
   vertical-align: baseline;
   text-decoration: none;
